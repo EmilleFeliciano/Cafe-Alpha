@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Alpha (α) - Sua Dose de Inovação</title>
+    <!-- Carregamento do Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Definindo a fonte Inter (padrão preferencial) e cores customizadas */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F8F7F3; /* Light Beige / Bege Claro */
+        }
+        /* Definindo as variáveis de cor para o tema */
+        :root {
+            --color-dark-brown: #3E3232; /* Marrom Escuro (Café) */
+            --color-cyan: #06B6D4; /* Azul Ciano (Tecnologia) */
+            --color-beige: #F8F7F3; /* Bege Claro (Fundo) */
+        }
+        .bg-dark-brown { background-color: var(--color-dark-brown); }
+        .text-dark-brown { color: var(--color-dark-brown); }
+        .text-cyan { color: var(--color-cyan); }
+        .border-cyan { border-color: var(--color-cyan); }
+        
+        /* Estilo da Logo */
+        .logo-text {
+            font-weight: 800;
+            letter-spacing: -1px;
+        }
+    </style>
+</head>
+<body class="text-dark-brown antialiased">
+
+    <!-- Navbar -->
+    <header class="bg-dark-brown shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            
+            <!-- Logo Estilizada -->
+            <a href="#" class="flex items-center space-x-2 text-white">
+                <span class="text-3xl logo-text">Café Alpha</span>
+                <span class="text-xl text-cyan font-bold italic">α</span>
+            </a>
+
+            <!-- Navegação (Desktop) -->
+            <nav class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#historia" class="text-white hover:text-cyan transition duration-300">Nossa História</a>
+                <a href="#cardapio" class="text-white hover:text-cyan transition duration-300">Cardápio</a>
+                <a href="#contato" class="text-white hover:text-cyan transition duration-300">Assistente Alpha</a>
+            </nav>
+            
+            <!-- Botão de Menu (Mobile - Oculto, apenas para estrutura) -->
+            <button class="md:hidden text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-24 text-center">
+        <span class="text-cyan text-lg font-semibold uppercase tracking-widest block mb-2">Engenharia de Prompt encontra o Paladar</span>
+        <h1 class="text-6xl sm:text-7xl lg:text-8xl font-extrabold text-dark-brown leading-tight mb-6">
+            Café Alpha (<span class="italic text-cyan">α</span>)
+        </h1>
+        <p class="text-lg sm:text-xl text-dark-brown max-w-3xl mx-auto mb-10">
+            Onde a próxima geração de automação No-Code encontra a experiência artesanal. A sua dose diária de inovação, servida em uma xícara.
+        </p>
+        <a href="#cardapio" class="bg-cyan text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-opacity-90 transition duration-300 transform hover:scale-105">
+            Ver o Cardápio Algorítmico
+        </a>
+    </section>
+
+    <!-- Linha de Separação -->
+    <hr class="max-w-3xl mx-auto border-t-2 border-cyan/50">
+
+    <!-- História (About) -->
+    <section id="historia" class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <h2 class="text-4xl font-bold text-center mb-12 border-b-4 pb-2 inline-block border-cyan/50">Nossa História: O Gênesis <span class="text-cyan">(α)</span></h2>
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6 text-lg leading-relaxed">
+                <p>O Café Alpha nasceu de um projeto audacioso na Imersão IA: provar que a **automação e a inteligência artificial** podem otimizar a experiência humana, em vez de substituí-la.</p>
+                <p>Nossa fundação é baseada em **engenharia de prompt e fluxos No-Code**. Cada processo, desde a sugestão de pedidos até o envio da comanda para a cozinha (simulado pelo nosso N8N), é orquestrado por um Agente de IA: o **Assistente Alpha**.</p>
+                <p>Nossa missão é simples: oferecer o melhor café e os melhores lanches com uma eficiência que só a IA de ponta pode proporcionar. Somos o ponto de encontro de nerds, inovadores e amantes de café que buscam a próxima grande ideia.</p>
+            </div>
+            <div class="rounded-xl overflow-hidden shadow-2xl">
+                <!-- Imagem de Placeholder com tema tecnológico -->
+                <img src="https://placehold.co/600x400/3E3232/06B6D4?text=IA+&+Cafe" alt="Imagem de IA e Café" class="w-full h-auto object-cover">
+            </div>
+        </div>
+    </section>
+
+    <!-- Cardápio Section -->
+    <section id="cardapio" class="bg-dark-brown text-white py-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center mb-16 border-b-4 pb-2 inline-block border-cyan">Cardápio Algorítmico</h2>
+            
+            <!-- Grid de Categorias -->
+            <div class="grid md:grid-cols-2 gap-12">
+                
+                <!-- Categoria: Cafés Especiais (Destaque) -->
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6 text-cyan border-b border-cyan/50 pb-2">Especiais (Prompt & Algoritmo)</h3>
+                    <ul class="space-y-6">
+                        <!-- Item 1 -->
+                        <li class="flex justify-between items-center pb-2 border-b border-white/20">
+                            <div>
+                                <p class="text-xl font-bold">Latte Algoritmo</p>
+                                <p class="text-sm text-gray-300">Uma mistura perfeitamente balanceada por uma 'fórmula' de sabor.</p>
+                            </div>
+                            <span class="text-xl font-bold text-cyan">R$ 14,00</span>
+                        </li>
+                        <!-- Item 2 -->
+                        <li class="flex justify-between items-center pb-2 border-b border-white/20">
+                            <div>
+                                <p class="text-xl font-bold">Cappuccino Prompt</p>
+                                <p class="text-sm text-gray-300">A proporção ideal de café, leite e espuma, um 'input' de sabor completo.</p>
+                            </div>
+                            <span class="text-xl font-bold text-cyan">R$ 16,00</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Categoria: Clássicos e Lanches -->
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6 text-cyan border-b border-cyan/50 pb-2">Clássicos & Bites</h3>
+                    <ul class="space-y-6">
+                        <!-- Item 3 -->
+                        <li class="flex justify-between items-center pb-2 border-b border-white/20">
+                            <div>
+                                <p class="text-xl font-bold">Espresso Simples</p>
+                                <p class="text-sm text-gray-300">O código binário do café: forte e direto.</p>
+                            </div>
+                            <span class="text-xl font-medium">R$ 6,00</span>
+                        </li>
+                        <!-- Item 4 -->
+                        <li class="flex justify-between items-center pb-2 border-b border-white/20">
+                            <div>
+                                <p class="text-xl font-bold">Café Filtro (Data Stream)</p>
+                                <p class="text-sm text-gray-300">Infusão constante de sabor, um fluxo ininterrupto de energia.</p>
+                            </div>
+                            <span class="text-xl font-medium">R$ 8,00</span>
+                        </li>
+                        <!-- Item 5 -->
+                        <li class="flex justify-between items-center pb-2 border-b border-white/20">
+                            <div>
+                                <p class="text-xl font-bold">Pão de Queijo Byte</p>
+                                <p class="text-sm text-gray-300">Quentinho, crocante por fora. O 'snack' padrão-ouro.</p>
+                            </div>
+                            <span class="text-xl font-medium">R$ 7,00</span>
+                        </li>
+                        <!-- Item 6 -->
+                        <li class="flex justify-between items-center pb-2 border-b border-white/20">
+                            <div>
+                                <p class="text-xl font-bold">Croissant Neural</p>
+                                <p class="text-sm text-gray-300">Massa folhada que se dobra em camadas complexas.</p>
+                            </div>
+                            <span class="text-xl font-medium">R$ 12,00</span>
+                        </li>
+                        <!-- Item 7 -->
+                        <li class="flex justify-between items-center pb-2 border-b border-white/0">
+                            <div>
+                                <p class="text-xl font-bold">Chá Gelado (System Reboot)</p>
+                                <p class="text-sm text-gray-300">Nosso blend refrescante para um reinício instantâneo.</p>
+                            </div>
+                            <span class="text-xl font-medium">R$ 10,00</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato/Chat Section (Assistente Alpha CTA) -->
+    <section id="contato" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
+        <div class="bg-gray-100 p-8 sm:p-12 rounded-2xl shadow-xl border-t-8 border-cyan">
+            <h2 class="text-4xl font-bold mb-4 text-dark-brown">Fale com o Assistente Alpha</h2>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
+                Pronto para fazer o seu pedido? Nosso **Agente de IA (configurado no N8N)** está esperando para te ajudar a escolher e processar sua comanda em tempo real. Ele garante que seu pedido chegue à cozinha sem *bugs*!
+            </p>
+            
+            <!-- Simulação de link para o chat/WhatsApp onde o N8N está conectado -->
+            <a href="#" class="bg-dark-brown text-white font-bold py-4 px-10 rounded-full text-xl shadow-lg hover:bg-stone-700 transition duration-300 transform hover:scale-105 inline-flex items-center space-x-2">
+                <!-- Ícone de Chat/IA (SVG) -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-cyan" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
+                    <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                    <line x1="12" y1="19" x2="12" y2="23"></line>
+                    <line x1="8" y1="23" x2="16" y2="23"></line>
+                </svg>
+                <span>Iniciar Chat Inteligente</span>
+            </a>
+            <p class="mt-4 text-sm text-gray-500">
+                Lembre-se: o N8N extrai sua escolha em JSON para a automação!
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-brown text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-sm">&copy; 2024 Café Alpha ($\alpha$). Criado com a inteligência da Imersão IA. | Design: Minimalista e Responsivo com Tailwind CSS.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

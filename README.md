@@ -53,6 +53,7 @@ Google Gemini (via AI Studio)
 - Estrutura modular para expansão futura
 
 📂 Estrutura do Projeto
+
 Cafe-Alpha/
 │
 ├── index.html

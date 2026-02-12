@@ -1,6 +1,6 @@
 # ☕Cafe-Alpha
 
-# Projeto desenvolvido durante a Imersão de IA da Alura, com foco na criação de um bot integrado ao Google Gemini, utilizando Google AI Studio e N8N para automação de fluxos inteligentes.
+## Projeto desenvolvido durante a Imersão de IA da Alura, com foco na criação de um bot integrado ao Google Gemini, utilizando Google AI Studio e N8N para automação de fluxos inteligentes.
 
 📌 Visão Geral
 
